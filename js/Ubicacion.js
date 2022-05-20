@@ -1,3 +1,4 @@
+export {Ubicacion};
 class Ubicacion{
     fila;
     columna;

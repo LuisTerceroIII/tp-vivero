@@ -1,24 +1,26 @@
-import {plantas} from "./recursos/Plantas";
+ import {plantas} from "./PlantasArray.js";
+import {Ubicacion} from "./Ubicacion.js";
 class Planta {
     commonName;
     color;
     family;
     id;
     photo;
+    ubicacion;
     constructor(commonName, color, family, photo = "", fila, column) {
         this.commonName = commonName;
         this.family = family;
         this.color = color;
         this.id = Date.now().toString(36) + Math.random().toString(36).substr(2);
-        this.photo = photo; 
+        this.photo = photo;
+        this.ubicacion = new Ubicacion(fila, column)   
     }
-
+  
 }
-console.log("hola");
-// let jsonTXT;
-//     plantas.forEach(e => {
-//         jsonTXT = JSON.stringify(e);
-// });
 
-// console.log(jsonTXT)
-// console.log(JSON.parse(jsonTXT));
+
+let jsonTXT = JSON.stringify(plantas);
+
+
+//  console.log(jsonTXT)
+ console.log(JSON.parse(jsonTXT));

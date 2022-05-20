@@ -1,4 +1,4 @@
-
+export {plantas};
 let plantas =[
     {
       commonName: 'Girasol',     
@@ -6,6 +6,8 @@ let plantas =[
       family: 'Asteraceae',
       id: 'l3eu672i2x8ikt8dxaf',
       photo: '',
+      ubicacion: { fila: 1, columna: 
+        2 }
     },
     {
       commonName: 'Nogal',
@@ -39,9 +41,29 @@ let plantas =[
       commonName: 'Pecano',
       color: 'Verde',
       family: 'Juglandaceae',
-      id: 'l3eu672j63i2ga7i08x',
+      id: 'l3eu672j63i2ga7i05x',
+      photo: ''
+    },
+    {
+      commonName: 'Armuelle',
+      color: 'Verde',
+      family: 'Amaranthaceae',
+      id: 'l3eu672j63i2ga7588x',
+      photo: ''
+    },
+    {
+      commonName: 'Aralia',
+      color: 'Verde',
+      family: 'Araliaceae',
+      id: 'l3eu672j63i2ga7218x',
+      photo: ''
+    },
+    {
+      commonName: 'Boldo',
+      color: 'Marron',
+      family: 'Monimiaceae',
+      id: 'l3eu672j63i2ga7008x',
       photo: ''
     }
   ]
 
-export {plantas};

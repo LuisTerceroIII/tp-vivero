@@ -1,0 +1,21 @@
+{
+  "name": "tp-vivero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisTerceroIII/tp-vivero.git"
+  },
+  "author": "Marcos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisTerceroIII/tp-vivero/issues"
+  },
+  
+  "homepage": "https://github.com/LuisTerceroIII/tp-vivero#readme"
+}
