@@ -1,0 +1,11 @@
+#imagenContainer{
+    margin: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+figcaption{
+    text-align: center;
+}
