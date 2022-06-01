@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/pronostico.css">
 </head>
 <body>
 <header class="header-container">
@@ -20,6 +21,45 @@
     </ul>
   </nav>
 </header>
+<main class="forecast-main-container">
+
+  <div class="left-block">
+    
+    <div class="sun-container">
+      <img src="/img/sun.svg"/>
+    </div>
+
+    <div class="forecast-info">
+      <h2 class="location" id="location"></h2>
+      <div class="forecast-details-container">
+        <span class="forecast-detail-item">Temperatura: <p id="tempeture"> </p></span>
+        <span class="forecast-detail-item">Temperatura min: <p id="min-tempeture"></p></span>
+        <span class="forecast-detail-item">Velocidad viento:  <p id="wind_speed"> </p> </span>
+        <span class="forecast-detail-item">Direccion viento:  <p id="wind_deg"> </p> </span>
+        <span class="forecast-detail-item">Humedad:  <p id="humidity">  </p> </span>
+        <span class="forecast-detail-item">Presion:  <p id="pressure"></p> </span>
+        <span class="forecast-detail-item">Visibilidad:  <p id="visibility"></p> </span>
+        <span class="forecast-detail-item">Descripcion:  <p id="description"></p> </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="extend-forecast-container">
+    <div class="forecast-extend-item">Sabado</div>
+    <div class="forecast-extend-item">Domingo</div>
+    <div class="forecast-extend-item">Lunes</div>
+    <div class="forecast-extend-item">Martes</div>
+  </div>
+
+</main>
+
+
+
+
+
+
+
+
 
 
 <footer class="footer-container">
@@ -30,5 +70,8 @@
   </span>
   <h6 class="copyright-footer">© 2022 Copyright: Grupo 7 </h6>
 </footer>
+
+
+<script src="../js/climaService.js"></script>
 </body>
 </html>
