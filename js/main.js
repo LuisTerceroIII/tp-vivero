@@ -11,16 +11,33 @@ const main = async () => {
     const res = await fetch(`https://weatherservices.herokuapp.com/api/${url}`)
     return res.json()
   }
-
+  const fetchTP_API = async (url) => {
+    const res = await fetch(`https://weatherservices.herokuapp.com/api/${url}`)
+    return res.json()
+  }
   const {help: {welcome, urls: {GET:URLS}}} = await loadFetch();
   console.log(URLS)
+
+
   const {states: weatherStates} = await fetchURL("weatherstates")
-  const { locations, locations: [sanMiguel] } = await fetchURL("locations")
+  console.log(weatherStates);
+
+  const { locations, locations: [sanMiguelLocation] } = await fetchURL("locations")
+  const wheaterDataSanMiguel = await fetchURL(`weather/${sanMiguelLocation.state_id}`)
+  //console.table(sanMiguelLocation)
+
+  const {name, province} = wheaterDataSanMiguel
+  console.log(wheaterDataSanMiguel)
+
   const { alerts: alertsDayOne } = await fetchURL("alerts/byDay/1")
   const { alerts: alertsDayTwo } = await fetchURL("alerts/byDay/2")
   const { alerts: alertsDayThree } = await fetchURL("alerts/byDay/3")
-  const {items: [weather]} = await fetchURL("weather")
-  const {forecast:{ forecast: {0: saturday, 1: sunday, 2: monday, 3: tuesday} }} = weather
+
+  //const weather = wheaterSanMiguel.item.weather
+  const {item : { weather }} = wheaterDataSanMiguel
+  console.table(weather)
+  const {forecast:{ forecast: {0: saturday, 1: sunday, 2: monday, 3: tuesday} }} = wheaterDataSanMiguel.item
+  
   const forecast = [saturday, sunday, monday, tuesday]
   console.log(forecast)
 }
