@@ -43,6 +43,7 @@ const main = async () => {
     const windSpeed = document.getElementById('wind_speed')
     const windDeg = document.getElementById('wind_deg')
     const description = document.getElementById('description')
+    const image = document.getElementById('image')
 
     const location = document.getElementById('location')
     location.innerHTML = `${sanMiguelLocation.name}, ${sanMiguelLocation.province}`
@@ -55,6 +56,7 @@ const main = async () => {
     windSpeed.innerHTML = `${weather.wind_speed}Km`;
     windDeg.innerHTML = `${weather.wing_deg}`;
     description.innerHTML = `${weather.description}`;
+    image.src = '/img/sun.svg'
 
     const { alerts: alertsDayOne } = await fetchURL("alerts/byDay/1")
     const { alerts: alertsDayTwo } = await fetchURL("alerts/byDay/2")
