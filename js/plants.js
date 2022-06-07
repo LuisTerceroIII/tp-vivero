@@ -98,5 +98,7 @@ export const plants  = [
         ambientTemperature: "30",
         irrigationCycle: "Mucha"
     },
+   
+   
     
 ]
