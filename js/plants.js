@@ -1,8 +1,8 @@
 export const plants  = [
     {
         imgSrc: "../img/mexicanFlame.jpg",
-        familyName : "Pseudogynoxys chenopodioides",
-        commonName: " Mexican flame",
+        familyName : "ACTINIDIACEAE",
+        commonName: "Mexican flame"
         mainColor: "Rojo",
         typeOfSoil: "Neutro",
         ambientTemperature: "20",

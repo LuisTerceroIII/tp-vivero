@@ -25,7 +25,6 @@ newPlantForm?.addEventListener('submit', (e) => {
     e.preventDefault();
     const newPlant = {
         family: e.target.family.value,
-        scientificName: e.target.scientificName.value,
         commonName: e.target.commonName.value,
         section: e.target.section.value,
         row: e.target.row.value,
