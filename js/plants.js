@@ -2,7 +2,7 @@ export const plants  = [
     {
         imgSrc: "../img/mexicanFlame.jpg",
         familyName : "ACTINIDIACEAE",
-        commonName: " Mexican flame",
+        commonName: "Mexican flame",
         mainColor: "Rojo",
         typeOfSoil: "Neutro",
         ambientTemperature: "30",
