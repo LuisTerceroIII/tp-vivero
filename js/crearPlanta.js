@@ -6,7 +6,6 @@ imageInput.addEventListener("change", function() {
     reader.readAsDataURL(this.files[0]);
 });
 
-
 const image_input = document.querySelector("#image")
 var uploaded_image = ""
 image_input.addEventListener("change", function() {
@@ -21,7 +20,6 @@ image_input.addEventListener("change", function() {
 
 const newPlantForm = document.getElementById('register-plant-form')
 newPlantForm?.addEventListener('submit', (e) => {
-
     e.preventDefault();
     const newPlant = {
         family: e.target.family.value,

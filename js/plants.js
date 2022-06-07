@@ -2,7 +2,7 @@ export const plants  = [
     {
         imgSrc: "../img/mexicanFlame.jpg",
         familyName : "ACTINIDIACEAE",
-        commonName: "Mexican flame"
+        commonName: "Mexican flame",
         mainColor: "Rojo",
         typeOfSoil: "Neutro",
         ambientTemperature: "20",
@@ -239,7 +239,7 @@ export const plants  = [
         familyName : "VITACEAE ",
         commonName: "Vitis",
         mainColor: "verde",
-        typeOfSoil: "seco",
+        typeOfSoil: "Acido",
         ambientTemperature: "10",
         irrigationCycle: "mucho"
     },
@@ -248,18 +248,18 @@ export const plants  = [
         familyName : "VERBENACEAE ",
         commonName: "Lantana camara",
         mainColor: "naranja",
-        typeOfSoil: "humedo",
-        ambientTemperature: "neutro",
-        irrigationCycle: "30"
+        typeOfSoil: "neutro",
+        ambientTemperature: "20",
+        irrigationCycle: "humedo"
     },
     {
         imgSrc: "../img/VALERIANACEAE.jpg",
         familyName : "VALERIANACEAE ",
         commonName: "Magnoliopsida",
         mainColor: "rosado",
-        typeOfSoil: "humedo",
-        ambientTemperature: "neutro",
-        irrigationCycle: "50"
+        typeOfSoil: "neutro",
+        ambientTemperature: "25",
+        irrigationCycle: "mucho"
     },
 ]
 
