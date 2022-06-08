@@ -1,11 +1,20 @@
-#imagenContainer{
-    margin: 7%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
+img {
+    max-width: 50px;
+    max-height: 50px;
+    aspect-ratio: 1/1;
 }
-figcaption{
+
+
+.catalog-title {
+    font-size: 32px;
     text-align: center;
+    padding: 1%;
+}
+
+.filter-input {
+    margin-bottom: 2%;
+}
+
+.label-filter {
+    margin-left: 1%;
 }
