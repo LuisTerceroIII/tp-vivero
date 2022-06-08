@@ -1,4 +1,6 @@
-
+html{
+    font-size: 1.4rem;
+ }
 .register-plant-title {
     font-size: 32px;
     text-align: center;
@@ -19,6 +21,9 @@
 .register-plant-form-container input {
     min-height: 20px;
     border-radius: 2px;
+}
+select{
+    padding: .5rem 0;
 }
 
 #display-image{

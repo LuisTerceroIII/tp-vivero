@@ -1,5 +1,7 @@
 import { plants } from "./plants.js";
 
+
+
 for (const p of plants) {
     p.familyName = p.familyName.toUpperCase();
     p.commonName = p.commonName.toUpperCase();
@@ -48,6 +50,7 @@ const laodCatalog = () => {
         ;
 
     tableData.innerHTML = table
+    
 }
 laodCatalog()
 
