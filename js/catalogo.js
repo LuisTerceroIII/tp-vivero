@@ -1,4 +1,13 @@
-import  {plants}  from "./plants.js";
+import { plants } from "./plants.js";
+
+for (const p of plants) {
+    p.familyName = p.familyName.toUpperCase();
+    p.commonName = p.commonName.toUpperCase();
+    p.mainColor = p.mainColor.toUpperCase();
+    p.typeOfSoil = p.typeOfSoil.toUpperCase();
+    p.ambientTemperature = p.ambientTemperature.toUpperCase();
+    p.irrigationCycle = p.irrigationCycle.toUpperCase();
+}
 
 let plantsToShow = plants
 
@@ -20,9 +29,9 @@ const laodCatalog = () => {
     <tbody>
     `
 
-    plantsToShow.forEach((plant,i) => {
+    plantsToShow.forEach((plant, i) => {
         table = table + `<tr>
-        <th scope="row">${i+1}</th>
+        <th scope="row">${i + 1}</th>
         <td><img src="${plant.imgSrc}" /></td>
         <td>${plant.familyName}</td>
         <td>${plant.commonName}</td>
@@ -34,16 +43,16 @@ const laodCatalog = () => {
     })
 
     table = table +
-    `</tbody>
+        `</tbody>
     </table>`
-    ;
+        ;
 
     tableData.innerHTML = table
 }
 laodCatalog()
 
 const filterCatalog = (word) => {
-    if(word.length === 0) {
+    if (word.length === 0) {
         plantsToShow = plants;
     } else {
         plantsToShow = plants.filter(plant => {
@@ -53,19 +62,20 @@ const filterCatalog = (word) => {
                 plant.mainColor.toLowerCase().includes(word.toLowerCase()) ||
                 plant.typeOfSoil.toLowerCase().includes(word.toLowerCase()) ||
                 plant.ambientTemperature.toLowerCase().includes(word.toLowerCase()) ||
-                plant.irrigationCycle.toLowerCase().includes(word.toLowerCase())
+                plant.irrigationCycle.toLowerCase().includes(word.toLowerCase()) ||
+                plant.ambientTemperature.toString().toLowerCase().includes(word.toLowerCase())
             )
         })
     }
-    laodCatalog()  
+    laodCatalog()
 }
 const filterInput = document.getElementById('filter')
 let toFilter = ""
-filterInput.addEventListener('keyup' , (e) => {
-    if(e.key == "Backspace") {
-        if(toFilter !== "") toFilter = toFilter.slice(0,toFilter.length - 1)
+filterInput.addEventListener('keyup', (e) => {
+    if (e.key == "Backspace") {
+        if (toFilter !== "") toFilter = toFilter.slice(0, toFilter.length - 1)
     } else {
         toFilter = toFilter + e.key.toLocaleLowerCase()
     }
     filterCatalog(toFilter)
-} )
+})
