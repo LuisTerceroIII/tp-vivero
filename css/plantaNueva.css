@@ -2,7 +2,7 @@ html{
     font-size: 1.4rem;
  }
 .new-plant-container {
-    display: flex;
+    display: none;
     flex-direction:column;
     padding: 5%;
     align-items: center;
