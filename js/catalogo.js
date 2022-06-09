@@ -1,5 +1,7 @@
 import { plants } from "./plants.js";
 
+
+
 for (const p of plants) {
     p.familyName = p.familyName.toUpperCase();
     p.commonName = p.commonName.toUpperCase();
@@ -32,7 +34,7 @@ const laodCatalog = () => {
     plantsToShow.forEach((plant, i) => {
         table = table + `<tr>
         <th scope="row">${i + 1}</th>
-        <td><img src="${plant.imgSrc}" /></td>
+        <td><img class="imgCatalogo"  src="${plant.imgSrc}" /></td>
         <td>${plant.familyName}</td>
         <td>${plant.commonName}</td>
         <td>${plant.mainColor}</td>
@@ -48,6 +50,7 @@ const laodCatalog = () => {
         ;
 
     tableData.innerHTML = table
+    
 }
 laodCatalog()
 

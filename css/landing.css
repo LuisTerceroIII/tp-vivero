@@ -1,9 +1,13 @@
+html{
+  font-size: 1.4rem;
+}
 .landing-container {
     min-width: 100%;
     min-height:100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
   }
   .landing-img {
     min-width: 300px;
@@ -11,6 +15,7 @@
     /**position: relative;
     transform: translateX(-50%);
     left: 50%;**/
+    background-attachment: fixed;
     margin: 5%;
   }
   .util-container-landing {
@@ -42,8 +47,11 @@
   .landing-button {
     background-color: transparent;
     border: 2px solid black;
-    min-height: 40px;
+    min-height: 10%;
+    min-width: 30%;
     cursor: pointer;
+    font-size: 20px;
+    border-radius: 10%;
   }
   
   .landing-button:hover {

@@ -1,3 +1,6 @@
+html{
+    font-size: 1.4rem;
+ }
 .new-plant-container {
     display: flex;
     flex-direction:column;
