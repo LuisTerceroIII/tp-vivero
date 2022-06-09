@@ -1,3 +1,5 @@
+import { createElementFromHTML } from './Util.js'
+
 const main = async () => {
 
     const fetchURL = async (url) => {
@@ -5,13 +7,7 @@ const main = async () => {
       return res.json()
     }
 
-    const createElementFromHTML= (htmlString) =>  {
-      let div = document.createElement('div');
-      div.innerHTML = htmlString.trim();
-      return div.firstChild;
-    }
 
-    const {states: weatherStates} = await fetchURL("weatherstates")
     const { locations: [sanMiguelLocation] } = await fetchURL("locations")
     const wheaterDataSanMiguel = await fetchURL(`weather/${sanMiguelLocation.state_id}`)
     const {item : { weather }} = wheaterDataSanMiguel

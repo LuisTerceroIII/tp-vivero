@@ -1,3 +1,11 @@
+import { plants } from './plants.js'
+import { createElementFromHTML } from './Util.js'
+
+
+const selectFamily = document.getElementById('family')
+const families = new Set(plants.map(plant => plant.familyName.toLocaleUpperCase()))
+families.forEach(family => selectFamily.appendChild(createElementFromHTML(`<option value="${family}">${family}</option>`)))
+
 const imageInput = document.querySelector("#image");
 var uploadedImage = "";
 imageInput.addEventListener("change", function() {
