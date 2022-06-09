@@ -68,7 +68,7 @@ export const plants = [
         familyName: "ANACARDIACEAE",
         commonName: "Pirul",
         mainColor: "verde",
-        typeOfSoil: "Calido",
+        typeOfSoil: "basico",
         ambientTemperature: "20",
         irrigationCycle: "Mucha"
     },
@@ -77,7 +77,7 @@ export const plants = [
         familyName: "CRASSULACEAE",
         commonName: "orpine",
         mainColor: "verde",
-        typeOfSoil: "Seco",
+        typeOfSoil: "basico",
         ambientTemperature: "20",
         irrigationCycle: "Poca"
     },
@@ -86,7 +86,7 @@ export const plants = [
         familyName: "ERICACEAE",
         commonName: "Dicotiledóneas",
         mainColor: "rosa",
-        typeOfSoil: "Humedo",
+        typeOfSoil: "Acido",
         ambientTemperature: "40",
         irrigationCycle: "Mucha"
     },
@@ -95,7 +95,7 @@ export const plants = [
         familyName: "EUPHORBIACEAEE",
         commonName: "spurge",
         mainColor: "verde",
-        typeOfSoil: "Calido",
+        typeOfSoil: "Neutro",
         ambientTemperature: "10",
         irrigationCycle: "Mucha"
     },
@@ -104,7 +104,7 @@ export const plants = [
         familyName: "FAGACEAE",
         commonName: "beech",
         mainColor: "verde-marron",
-        typeOfSoil: "Seco",
+        typeOfSoil: "basico",
         ambientTemperature: "30",
         irrigationCycle: "Poca"
     },
@@ -113,7 +113,7 @@ export const plants = [
         familyName: "GINKGOACEAE",
         commonName: "Ginkgo biloba",
         mainColor: "verde-claro",
-        typeOfSoil: "humedo",
+        typeOfSoil: "basico",
         ambientTemperature: "50",
         irrigationCycle: "mucha"
     },
@@ -122,7 +122,7 @@ export const plants = [
         familyName: "HAMAMELIDACEAE",
         commonName: "Árbol de hierro",
         mainColor: "beige-turquesa",
-        typeOfSoil: "humedo",
+        typeOfSoil: "Neutro",
         ambientTemperature: "22",
         irrigationCycle: "poca"
     },
@@ -131,7 +131,7 @@ export const plants = [
         familyName: "JUGLANDACEAE ",
         commonName: "Taxonomía",
         mainColor: "verde",
-        typeOfSoil: "seco",
+        typeOfSoil: "Acido",
         ambientTemperature: "40",
         irrigationCycle: "poca"
     },
@@ -140,7 +140,7 @@ export const plants = [
         familyName: "LAMIACEAE  ",
         commonName: "Lamiales",
         mainColor: "turquesa",
-        typeOfSoil: "neutro",
+        typeOfSoil: "Acido",
         ambientTemperature: "10",
         irrigationCycle: "poca"
     },
@@ -149,7 +149,7 @@ export const plants = [
         familyName: "LAURACEAE",
         commonName: "laurea",
         mainColor: "verde-oscuro",
-        typeOfSoil: "humedo",
+        typeOfSoil: "Acido",
         ambientTemperature: "29",
         irrigationCycle: "mucha"
     },
@@ -176,18 +176,18 @@ export const plants = [
         familyName: "RHAMNACEAE ",
         commonName: "Colubrina arborescens",
         mainColor: "verde",
-        typeOfSoil: "humedo",
+        typeOfSoil: "basico",
         ambientTemperature: "30",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/melocotonero.jpg",
         familyName: "ROSACEAE ",
         commonName: "melocotonero",
         mainColor: "rosado",
-        typeOfSoil: "humedo",
+        typeOfSoil: "basico",
         ambientTemperature: "10",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/RUBIACEAE.jpg",
@@ -196,34 +196,34 @@ export const plants = [
         mainColor: "amarillo",
         typeOfSoil: "neutro",
         ambientTemperature: "30",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     },
     {
         imgSrc: "../img/Cupania.jpg",
         familyName: "Cupania americana L",
         commonName: "Guárana",
         mainColor: "amarillo",
-        typeOfSoil: "seco",
+        typeOfSoil: "Neutro",
         ambientTemperature: "10",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/SCROPHULARIACEAE.jpg",
         familyName: "SCROPHULARIACEAE",
         commonName: "Bacopa",
         mainColor: "blanco",
-        typeOfSoil: "humedo",
+        typeOfSoil: "neutro",
         ambientTemperature: "45",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     },
     {
         imgSrc: "../img/SOLANACEAE.jpg",
         familyName: "SOLANACEAE ",
         commonName: "Solanum tuberosum",
         mainColor: "violeta",
-        typeOfSoil: "humedo",
+        typeOfSoil: "basico",
         ambientTemperature: "30",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/TAMARICACEAE.jpg",
@@ -232,7 +232,7 @@ export const plants = [
         mainColor: "blanco",
         typeOfSoil: "neutro",
         ambientTemperature: "20",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/VITACEAE.jpg",
@@ -241,7 +241,7 @@ export const plants = [
         mainColor: "verde",
         typeOfSoil: "Acido",
         ambientTemperature: "10",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     },
     {
         imgSrc: "../img/VERBENACEAE.jpeg",
@@ -250,7 +250,7 @@ export const plants = [
         mainColor: "naranja",
         typeOfSoil: "neutro",
         ambientTemperature: "20",
-        irrigationCycle: "humedo"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/VALERIANACEAE.jpg",
@@ -259,16 +259,16 @@ export const plants = [
         mainColor: "rosado",
         typeOfSoil: "neutro",
         ambientTemperature: "25",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     },
     {
         imgSrc: "../img/Orchidaceae.jpg",
         familyName: "Orchidaceae",
         commonName: "orquídeas",
         mainColor: "marron",
-        typeOfSoil: "humedo",
+        typeOfSoil: "acido",
         ambientTemperature: "35",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     },
     {
         imgSrc: "../img/Fabaceae.jpg",
@@ -277,14 +277,14 @@ export const plants = [
         mainColor: "amarillo",
         typeOfSoil: "neutro",
         ambientTemperature: "12",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/Poaceae.jpg",
         familyName: "Poaceae ",
         commonName: "gramíneas",
         mainColor: "verde-claro",
-        typeOfSoil: "humedo",
+        typeOfSoil: "acido",
         ambientTemperature: "25",
         irrigationCycle: "mucho"
     },
@@ -293,7 +293,7 @@ export const plants = [
         familyName: "Chenopodioideae",
         commonName: "amarantáceas",
         mainColor: "verde",
-        typeOfSoil: "humedo",
+        typeOfSoil: "acido",
         ambientTemperature: "55",
         irrigationCycle: "mucho"
     }, {
@@ -301,17 +301,17 @@ export const plants = [
         familyName: "Boraginaceae",
         commonName: "borragináceas",
         mainColor: "lila",
-        typeOfSoil: "humedo",
+        typeOfSoil: "acido",
         ambientTemperature: "30",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     }, {
         imgSrc: "../img/Byblidaceae.jpg",
         familyName: "Byblidaceae",
         commonName: "Byblis",
         mainColor: "rosado",
-        typeOfSoil: "seco",
+        typeOfSoil: "basico",
         ambientTemperature: "10",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     }
     , {
         imgSrc: "../img/Caprifoliaceae.jpg",
@@ -320,16 +320,16 @@ export const plants = [
         mainColor: "rosado",
         typeOfSoil: "neutro",
         ambientTemperature: "20",
-        irrigationCycle: "mucho"
+        irrigationCycle: "mucha"
     },
     {
         imgSrc: "../img/Cephalotaxaceae.jpg",
         familyName: "Cephalotaxaceae",
         commonName: "cefalotaxos ",
         mainColor: "verde",
-        typeOfSoil: "seco",
+        typeOfSoil: "basico",
         ambientTemperature: "10",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/Caryophyllaceae.jpg",
@@ -338,16 +338,16 @@ export const plants = [
         mainColor: "blanco",
         typeOfSoil: "neutro",
         ambientTemperature: "20",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/Casuarinaceae.jpg",
         familyName: "Casuarinaceae ",
         commonName: "palo hierro ",
         mainColor: "marron-claro",
-        typeOfSoil: "seco",
+        typeOfSoil: "basico",
         ambientTemperature: "15",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
     {
         imgSrc: "../img/Caricaceae.jpg",
@@ -356,7 +356,7 @@ export const plants = [
         mainColor: "verde-claro",
         typeOfSoil: "neutro",
         ambientTemperature: "10",
-        irrigationCycle: "poco"
+        irrigationCycle: "poca"
     },
 ]
 

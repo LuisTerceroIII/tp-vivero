@@ -7,13 +7,16 @@ html{
     padding: 2%;
 }
 
-.register-plant-form-container {
+.register-plant-form-container, .register-family-form-container {
     display: flex;
     flex-direction:  column;
     max-width: 70%;
     margin: 0 auto;
     gap: 10px;
     padding-bottom: 10%;
+}
+.register-family-form-container {
+    display: none;
 }
 .register-plant-form-container label {
     font-weight: 800;
@@ -49,5 +52,19 @@ select{
 }
 
 #add-new-family {
-    margin-left: 5%;
+    color:rgba(216, 123, 1, 0.712);
+    text-decoration: none;
+
+}
+#add-new-family:hover {
+    color:rgba(184, 159, 128, 0.712);
+}
+
+.back-arrow {
+    max-width: 30px;
+    cursor: pointer;
+}
+.back-arrow:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in;
 }
