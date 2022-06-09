@@ -58,21 +58,23 @@ const main = async () => {
 
   const alerts = [alertsDayOne, alertsDayTwo, alertsDayThree]
   const alertsContainer = document.getElementById('alerts-main-container')
-
-  const btns = []; //new
+  const btns = [];
+  const infoClima = [];
 
   alerts.forEach((e, i) => { //new
-    let divDia = createElementFromHTML(`<div id="alerts/byDay/${i}" class="contenedor"> <div id="info-day-${i}" class="info-day"></div></div>`);
-    alertsContainer.appendChild(divDia);
-    let boton = createElementFromHTML(`<button class="bntClima " id="btnDay${i}" type="submit">Día ${i+1}</button>"`)
+    let infoAlerta = createElementFromHTML(`<div id="alerts/byDay/${i}" class="contenedor"> <div id="info-day-${i}" class="info-day"></div></div>`);
+
+    alertsContainer.appendChild(infoAlerta);
+    let boton = createElementFromHTML(`<button class="bntClima " id="btnDay${i}" type="submit">Día ${i + 1}</button>"`)
     btns.push(boton);
+    infoClima.push(infoAlerta);
     document.getElementById(`alerts/byDay/${i}`).append(boton);
   })
 
+
   btns.forEach((e, i) => { //new
     e.addEventListener("click", () => {
-      let botonapretado = i;
-      console.log(botonapretado);
+
       alerts[i].forEach((c) => {
         document.getElementById(`info-day-${i}`).innerHTML += `
           <p><span> Fecha: </span>${c.date}</p>
@@ -82,13 +84,16 @@ const main = async () => {
           <p><span> ${c.description == null ? '' : "Descripción:"} </span>${c.description == null ? '' : c.description}</p>
           <br> <br> <br>
           `;
-        e.disabled = "true";
       })
-      
+      infoClima.forEach((e, i) => {
+        if (document.getElementById(`info-day-${i}`).style.display === "block") {
+          document.getElementById(`info-day-${i}`).style.display = "none";
+          document.getElementById(`info-day-${i}`).innerHTML = "";
+        } else {
+          document.getElementById(`info-day-${i}`).style.display = "block";
+        }
+      })
     })
-
-    //Tengo que tener todas las referencias a los divs para ir aplicandole y quitandole clases a los 3
-    // los 3 divs se basan en la id "info-day-i" i=0,1,2, no tengo la referencia en variables.
 
   })
 

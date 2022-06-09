@@ -199,7 +199,7 @@
 .contenedor {
     padding: 1rem;
     text-align: center;
-    width: 90%;
+    width: 50%;
     -webkit-box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.2);
 }
@@ -207,7 +207,6 @@
 .info-day {
     display: flex;
     flex-direction: column;
-
 }
 
 .info-day span {
@@ -221,10 +220,4 @@
 
 }
 
-.display-none {
-    display: none;
-}
 
-.display-block {
-    display: block;
-}
