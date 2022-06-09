@@ -1,5 +1,3 @@
-import { plants } from "./plants.js";
-
 
 
 for (const p of plants) {

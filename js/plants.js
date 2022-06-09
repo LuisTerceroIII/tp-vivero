@@ -1,4 +1,4 @@
-export const plants = [
+const plants = [
     {
         imgSrc: "../img/mexicanFlame.jpg",
         familyName: "ACTINIDIACEAE",

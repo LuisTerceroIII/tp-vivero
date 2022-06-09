@@ -1,6 +1,3 @@
-import { plants } from './plants.js'
-import { createElementFromHTML } from './Util.js'
-
 
 //title
 const title = document.getElementById('register-plant-title')
@@ -17,9 +14,29 @@ const addOptions = () => {
 }
 addOptions()
 
+//read photo
+const imageInput = document.querySelector("#image");
+var uploadedImage = "";
+imageInput.addEventListener("change", function() {
+    const reader = new FileReader();
+    uploadedImage  = reader.result;
+    reader.readAsDataURL(this.files[0]);
+});
+const image_input = document.querySelector("#image")
+var uploaded_image = ""
+image_input.addEventListener("change", function() {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+      uploaded_image = reader.result;
+      document.querySelector("#display-image").style.display = 'block'
+      document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+    });
+    reader.readAsDataURL(this.files[0]);
+  });
 
-//Process form
+//Process new plant form
 const newPlantForm = document.getElementById('register-plant-form')
+const newPlantCard = document.getElementById('new-plant-card')
 newPlantForm?.addEventListener('submit', (e) => {
     e.preventDefault();
     const newPlant = {
@@ -30,8 +47,25 @@ newPlantForm?.addEventListener('submit', (e) => {
         column: e.target.column.value,
         image: uploaded_image
     }
+    newPlantCard.style.display = 'flex'
+    newPlantForm.style.display= 'none'
+    title.innerHTML = "Nueva planta"
 
-    localStorage.setItem('newPlant', JSON.stringify(newPlant))
+    const family = document.getElementById('new-plant-family')
+    const commonName = document.getElementById('new-plant-common-name')
+    const section = document.getElementById('new-plant-section')
+    const sectionRow = document.getElementById('new-plant-section-row')
+    const sectionColumn = document.getElementById('new-plant-section-column')
+    const image = document.getElementById('new-plant-image')
+
+    family.innerHTML = family.innerHTML + newPlant.family
+    commonName.innerHTML = commonName.innerHTML + newPlant.commonName
+    section.innerHTML = section.innerHTML+  newPlant.section
+    sectionRow.innerHTML = sectionRow.innerHTML + newPlant.row
+    sectionColumn.innerHTML = sectionColumn.innerHTML + newPlant.column
+    image.src = newPlant.image
+
+    
 } )
 
 //Process new family option
@@ -78,31 +112,12 @@ newFamilyForm.addEventListener('submit', (e) => {
 
 
 //Go to new plant
-const newPlantSubmit = document.getElementById('new-plant-submit')
+/* const newPlantSubmit = document.getElementById('new-plant-submit')
 newPlantSubmit?.addEventListener('click', (e) => {
-    return window.location = "/pages/plantaNueva.html"
+    return window.location = "./../pages/plantaNueva.html"
 })
+ */
 
-const imageInput = document.querySelector("#image");
-var uploadedImage = "";
-imageInput.addEventListener("change", function() {
-    const reader = new FileReader();
-    uploadedImage  = reader.result;
-    reader.readAsDataURL(this.files[0]);
-});
-
-//read photo
-const image_input = document.querySelector("#image")
-var uploaded_image = ""
-image_input.addEventListener("change", function() {
-    const reader = new FileReader();
-    reader.addEventListener("load", () => {
-      uploaded_image = reader.result;
-      document.querySelector("#display-image").style.display = 'block'
-      document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
-    });
-    reader.readAsDataURL(this.files[0]);
-  });
 
 
 

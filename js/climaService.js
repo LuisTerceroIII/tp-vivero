@@ -1,13 +1,10 @@
-import { createElementFromHTML } from './Util.js'
-
 const main = async () => {
 
     const fetchURL = async (url) => {
       const res = await fetch(`https://weatherservices.herokuapp.com/api/${url}`)
       return res.json()
     }
-
-
+    
     const { locations: [sanMiguelLocation] } = await fetchURL("locations")
     const wheaterDataSanMiguel = await fetchURL(`weather/${sanMiguelLocation.state_id}`)
     const {item : { weather }} = wheaterDataSanMiguel
@@ -52,7 +49,7 @@ const main = async () => {
     windSpeed.innerHTML = `${weather.wind_speed}Km`;
     windDeg.innerHTML = `${weather.wing_deg}`;
     description.innerHTML = `${weather.description}`;
-    image.src = '/img/sun.svg'
+    image.src = './../img/sun.svg'
 
     const { alerts: alertsDayOne } = await fetchURL("alerts/byDay/1")
     const { alerts: alertsDayTwo } = await fetchURL("alerts/byDay/2")
