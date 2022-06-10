@@ -30,7 +30,7 @@ function createMapSucursales(nodeId){
 function createMapSucursal(nodeId, suc) {
     let coordenadas = [suc.ubicacion.lat, suc.ubicacion.lon];
     let marker = L.marker(coordenadas).addTo(myMap)
-    .bindPopup(`${suc.nombre}<br/><span class="depDir">${suc.direccion}</span><br/><span class="depHor">${suc.horario}</span>`); 
+    .bindPopup(`${suc.nombre}<br/><span class="depDir">${suc.direccion}</span><br/><span class="depHor">${suc.horario}</br></span><span class="depHor">${suc.tel}</span>`); 
     markers.push(marker)
 }
 
